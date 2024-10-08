@@ -6,7 +6,7 @@
 
 - **`test-julia.jl`**
   
-  This file is used to learn Julia. For this, I am utilizing the official documentation along with [this tutorial](https://github.com/mtfishman/ITensorTutorials.jl/blob/main/presentation/presentation.pdf).
+  I use this file to learn Julia. For this, I am utilizing the official documentation along with [this tutorial](https://github.com/mtfishman/ITensorTutorials.jl/blob/main/presentation/presentation.pdf).
 
 - **`classical-simulation.ipynb`**
   
