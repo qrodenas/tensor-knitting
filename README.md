@@ -12,7 +12,7 @@
   
   Contains a full density matrix simulation of the RXX gate by applying the nonlocal channels derived from the circuit knitting decomposition.
 
--- **`tensor-simulation-RXX.ipynb`**
+- **`tensor-simulation-RXX.ipynb`**
   
   Contains a full density matrix simulation of the RXX gate using tensor networks and the nonlocal channels from the circuit knitting decomposition.
 
