@@ -4,9 +4,9 @@
 
 ## File Descriptions
 
-- **`test-julia.jl`**
+- **`test-julia.ipynb`**
   
-  I use this file to learn Julia. For this, I am utilizing the official documentation along with [this tutorial](https://github.com/mtfishman/ITensorTutorials.jl/blob/main/presentation/presentation.pdf). Now turning it into a jupyter notebook.
+  I use this file to learn Julia. For this, I am utilizing the official documentation along with [this tutorial](https://github.com/mtfishman/ITensorTutorials.jl/blob/main/presentation/presentation.pdf). 
 
 - **`classical-simulation.ipynb`**
   
