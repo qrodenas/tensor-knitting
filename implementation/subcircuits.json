@@ -1,0 +1,1412 @@
+[
+    {
+        "Subexperiment": "A",
+        "Subcircuit": 0,
+        "Qubit number": 5,
+        "Qubit range": [
+            0,
+            4
+        ],
+        "Operations": [
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    0,
+                    1
+                ]
+            },
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    1
+                ]
+            },
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    2,
+                    3
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    2
+                ]
+            },
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    3,
+                    4
+                ]
+            },
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    0,
+                    4
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    0
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    3
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    4
+                ]
+            }
+        ]
+    },
+    {
+        "Subexperiment": "A",
+        "Subcircuit": 1,
+        "Qubit number": 5,
+        "Qubit range": [
+            0,
+            4
+        ],
+        "Operations": [
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    0,
+                    1
+                ]
+            },
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    1
+                ]
+            },
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    2,
+                    3
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    2
+                ]
+            },
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    3,
+                    4
+                ]
+            },
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    0,
+                    4
+                ]
+            },
+            {
+                "Name": "h",
+                "Angle": [],
+                "Qubits": [
+                    0
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    3
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    4
+                ]
+            },
+            {
+                "Name": "measure",
+                "Angle": [],
+                "Qubits": [
+                    0
+                ]
+            },
+            {
+                "Name": "h",
+                "Angle": [],
+                "Qubits": [
+                    0
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    0
+                ]
+            }
+        ]
+    },
+    {
+        "Subexperiment": "A",
+        "Subcircuit": 2,
+        "Qubit number": 5,
+        "Qubit range": [
+            0,
+            4
+        ],
+        "Operations": [
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    0,
+                    1
+                ]
+            },
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    1
+                ]
+            },
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    2,
+                    3
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    2
+                ]
+            },
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    3,
+                    4
+                ]
+            },
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    0,
+                    4
+                ]
+            },
+            {
+                "Name": "h",
+                "Angle": [],
+                "Qubits": [
+                    0
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    3
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    4
+                ]
+            },
+            {
+                "Name": "measure",
+                "Angle": [],
+                "Qubits": [
+                    0
+                ]
+            },
+            {
+                "Name": "h",
+                "Angle": [],
+                "Qubits": [
+                    0
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    0
+                ]
+            }
+        ]
+    },
+    {
+        "Subexperiment": "A",
+        "Subcircuit": 3,
+        "Qubit number": 5,
+        "Qubit range": [
+            0,
+            4
+        ],
+        "Operations": [
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    0,
+                    1
+                ]
+            },
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    1
+                ]
+            },
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    2,
+                    3
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    2
+                ]
+            },
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    3,
+                    4
+                ]
+            },
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    0,
+                    4
+                ]
+            },
+            {
+                "Name": "rx",
+                "Angle": [
+                    1.5707963267948966
+                ],
+                "Qubits": [
+                    0
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    0
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    3
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    4
+                ]
+            }
+        ]
+    },
+    {
+        "Subexperiment": "A",
+        "Subcircuit": 4,
+        "Qubit number": 5,
+        "Qubit range": [
+            0,
+            4
+        ],
+        "Operations": [
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    0,
+                    1
+                ]
+            },
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    1
+                ]
+            },
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    2,
+                    3
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    2
+                ]
+            },
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    3,
+                    4
+                ]
+            },
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    0,
+                    4
+                ]
+            },
+            {
+                "Name": "rx",
+                "Angle": [
+                    -1.5707963267948966
+                ],
+                "Qubits": [
+                    0
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    0
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    3
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    4
+                ]
+            }
+        ]
+    },
+    {
+        "Subexperiment": "A",
+        "Subcircuit": 5,
+        "Qubit number": 5,
+        "Qubit range": [
+            0,
+            4
+        ],
+        "Operations": [
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    0,
+                    1
+                ]
+            },
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    1
+                ]
+            },
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    2,
+                    3
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    2
+                ]
+            },
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    3,
+                    4
+                ]
+            },
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    0,
+                    4
+                ]
+            },
+            {
+                "Name": "rx",
+                "Angle": [
+                    3.141592653589793
+                ],
+                "Qubits": [
+                    0
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    0
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    3
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    4
+                ]
+            }
+        ]
+    },
+    {
+        "Subexperiment": "B",
+        "Subcircuit": 0,
+        "Qubit number": 5,
+        "Qubit range": [
+            5,
+            9
+        ],
+        "Operations": [
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    5,
+                    6
+                ]
+            },
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    6,
+                    7
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    6
+                ]
+            },
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    7,
+                    8
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    7
+                ]
+            },
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    8,
+                    9
+                ]
+            },
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    5,
+                    9
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    5
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    8
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    9
+                ]
+            }
+        ]
+    },
+    {
+        "Subexperiment": "B",
+        "Subcircuit": 1,
+        "Qubit number": 5,
+        "Qubit range": [
+            5,
+            9
+        ],
+        "Operations": [
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    5,
+                    6
+                ]
+            },
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    6,
+                    7
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    6
+                ]
+            },
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    7,
+                    8
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    7
+                ]
+            },
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    8,
+                    9
+                ]
+            },
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    5,
+                    9
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    5
+                ]
+            },
+            {
+                "Name": "rx",
+                "Angle": [
+                    1.5707963267948966
+                ],
+                "Qubits": [
+                    9
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    8
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    9
+                ]
+            }
+        ]
+    },
+    {
+        "Subexperiment": "B",
+        "Subcircuit": 2,
+        "Qubit number": 5,
+        "Qubit range": [
+            5,
+            9
+        ],
+        "Operations": [
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    5,
+                    6
+                ]
+            },
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    6,
+                    7
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    6
+                ]
+            },
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    7,
+                    8
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    7
+                ]
+            },
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    8,
+                    9
+                ]
+            },
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    5,
+                    9
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    5
+                ]
+            },
+            {
+                "Name": "rx",
+                "Angle": [
+                    -1.5707963267948966
+                ],
+                "Qubits": [
+                    9
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    8
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    9
+                ]
+            }
+        ]
+    },
+    {
+        "Subexperiment": "B",
+        "Subcircuit": 3,
+        "Qubit number": 5,
+        "Qubit range": [
+            5,
+            9
+        ],
+        "Operations": [
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    5,
+                    6
+                ]
+            },
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    6,
+                    7
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    6
+                ]
+            },
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    7,
+                    8
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    7
+                ]
+            },
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    8,
+                    9
+                ]
+            },
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    5,
+                    9
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    5
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    8
+                ]
+            },
+            {
+                "Name": "h",
+                "Angle": [],
+                "Qubits": [
+                    9
+                ]
+            },
+            {
+                "Name": "measure",
+                "Angle": [],
+                "Qubits": [
+                    9
+                ]
+            },
+            {
+                "Name": "h",
+                "Angle": [],
+                "Qubits": [
+                    9
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    9
+                ]
+            }
+        ]
+    },
+    {
+        "Subexperiment": "B",
+        "Subcircuit": 4,
+        "Qubit number": 5,
+        "Qubit range": [
+            5,
+            9
+        ],
+        "Operations": [
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    5,
+                    6
+                ]
+            },
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    6,
+                    7
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    6
+                ]
+            },
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    7,
+                    8
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    7
+                ]
+            },
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    8,
+                    9
+                ]
+            },
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    5,
+                    9
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    5
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    8
+                ]
+            },
+            {
+                "Name": "h",
+                "Angle": [],
+                "Qubits": [
+                    9
+                ]
+            },
+            {
+                "Name": "measure",
+                "Angle": [],
+                "Qubits": [
+                    9
+                ]
+            },
+            {
+                "Name": "h",
+                "Angle": [],
+                "Qubits": [
+                    9
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    9
+                ]
+            }
+        ]
+    },
+    {
+        "Subexperiment": "B",
+        "Subcircuit": 5,
+        "Qubit number": 5,
+        "Qubit range": [
+            5,
+            9
+        ],
+        "Operations": [
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    5,
+                    6
+                ]
+            },
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    6,
+                    7
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    6
+                ]
+            },
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    7,
+                    8
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    7
+                ]
+            },
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    8,
+                    9
+                ]
+            },
+            {
+                "Name": "rxx",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    5,
+                    9
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    5
+                ]
+            },
+            {
+                "Name": "rx",
+                "Angle": [
+                    3.141592653589793
+                ],
+                "Qubits": [
+                    9
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    8
+                ]
+            },
+            {
+                "Name": "rz",
+                "Angle": [
+                    0.4
+                ],
+                "Qubits": [
+                    9
+                ]
+            }
+        ]
+    }
+]
