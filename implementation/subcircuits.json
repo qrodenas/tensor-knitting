@@ -1,5 +1,5 @@
 {
-    "Expected value": 11.760798934094947,
+    "Expected value": 7.493540693989799,
     "Coefficients": [
         0.9900332889206209,
         0.09933466539753062,
@@ -12,14 +12,14 @@
         {
             "Subexperiment": "A",
             "Subcircuit": 0,
-            "Qubit number": 6,
+            "Qubit number": 4,
             "Qubit range": [
                 0,
-                5
+                3
             ],
             "Operations": [
                 {
-                    "Name": "rzz",
+                    "Name": "rxx",
                     "Angle": [
                         0.2
                     ],
@@ -29,7 +29,7 @@
                     ]
                 },
                 {
-                    "Name": "rzz",
+                    "Name": "rxx",
                     "Angle": [
                         0.2
                     ],
@@ -39,7 +39,7 @@
                     ]
                 },
                 {
-                    "Name": "rx",
+                    "Name": "ry",
                     "Angle": [
                         0.2
                     ],
@@ -48,7 +48,7 @@
                     ]
                 },
                 {
-                    "Name": "rzz",
+                    "Name": "rxx",
                     "Angle": [
                         0.2
                     ],
@@ -58,55 +58,17 @@
                     ]
                 },
                 {
-                    "Name": "rx",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        2
-                    ]
-                },
-                {
-                    "Name": "rzz",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        3,
-                        4
-                    ]
-                },
-                {
-                    "Name": "rx",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        3
-                    ]
-                },
-                {
-                    "Name": "rzz",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        4,
-                        5
-                    ]
-                },
-                {
-                    "Name": "rzz",
+                    "Name": "rxx",
                     "Angle": [
                         0.2
                     ],
                     "Qubits": [
                         0,
-                        5
+                        3
                     ]
                 },
                 {
-                    "Name": "rx",
+                    "Name": "ry",
                     "Angle": [
                         0.2
                     ],
@@ -115,21 +77,21 @@
                     ]
                 },
                 {
-                    "Name": "rx",
+                    "Name": "ry",
                     "Angle": [
                         0.2
                     ],
                     "Qubits": [
-                        4
+                        2
                     ]
                 },
                 {
-                    "Name": "rx",
+                    "Name": "ry",
                     "Angle": [
                         0.2
                     ],
                     "Qubits": [
-                        5
+                        3
                     ]
                 }
             ]
@@ -137,14 +99,14 @@
         {
             "Subexperiment": "A",
             "Subcircuit": 1,
-            "Qubit number": 6,
+            "Qubit number": 4,
             "Qubit range": [
                 0,
-                5
+                3
             ],
             "Operations": [
                 {
-                    "Name": "rzz",
+                    "Name": "rxx",
                     "Angle": [
                         0.2
                     ],
@@ -154,7 +116,7 @@
                     ]
                 },
                 {
-                    "Name": "rzz",
+                    "Name": "rxx",
                     "Angle": [
                         0.2
                     ],
@@ -164,7 +126,7 @@
                     ]
                 },
                 {
-                    "Name": "rx",
+                    "Name": "ry",
                     "Angle": [
                         0.2
                     ],
@@ -173,7 +135,7 @@
                     ]
                 },
                 {
-                    "Name": "rzz",
+                    "Name": "rxx",
                     "Angle": [
                         0.2
                     ],
@@ -183,7 +145,24 @@
                     ]
                 },
                 {
-                    "Name": "rx",
+                    "Name": "rxx",
+                    "Angle": [
+                        0.2
+                    ],
+                    "Qubits": [
+                        0,
+                        3
+                    ]
+                },
+                {
+                    "Name": "h",
+                    "Angle": [],
+                    "Qubits": [
+                        0
+                    ]
+                },
+                {
+                    "Name": "ry",
                     "Angle": [
                         0.2
                     ],
@@ -192,60 +171,12 @@
                     ]
                 },
                 {
-                    "Name": "rzz",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        3,
-                        4
-                    ]
-                },
-                {
-                    "Name": "rx",
+                    "Name": "ry",
                     "Angle": [
                         0.2
                     ],
                     "Qubits": [
                         3
-                    ]
-                },
-                {
-                    "Name": "rzz",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        4,
-                        5
-                    ]
-                },
-                {
-                    "Name": "rzz",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        0,
-                        5
-                    ]
-                },
-                {
-                    "Name": "rx",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        4
-                    ]
-                },
-                {
-                    "Name": "rx",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        5
                     ]
                 },
                 {
@@ -256,7 +187,14 @@
                     ]
                 },
                 {
-                    "Name": "rx",
+                    "Name": "h",
+                    "Angle": [],
+                    "Qubits": [
+                        0
+                    ]
+                },
+                {
+                    "Name": "ry",
                     "Angle": [
                         0.2
                     ],
@@ -269,14 +207,14 @@
         {
             "Subexperiment": "A",
             "Subcircuit": 2,
-            "Qubit number": 6,
+            "Qubit number": 4,
             "Qubit range": [
                 0,
-                5
+                3
             ],
             "Operations": [
                 {
-                    "Name": "rzz",
+                    "Name": "rxx",
                     "Angle": [
                         0.2
                     ],
@@ -286,7 +224,7 @@
                     ]
                 },
                 {
-                    "Name": "rzz",
+                    "Name": "rxx",
                     "Angle": [
                         0.2
                     ],
@@ -296,7 +234,7 @@
                     ]
                 },
                 {
-                    "Name": "rx",
+                    "Name": "ry",
                     "Angle": [
                         0.2
                     ],
@@ -305,7 +243,7 @@
                     ]
                 },
                 {
-                    "Name": "rzz",
+                    "Name": "rxx",
                     "Angle": [
                         0.2
                     ],
@@ -315,7 +253,24 @@
                     ]
                 },
                 {
-                    "Name": "rx",
+                    "Name": "rxx",
+                    "Angle": [
+                        0.2
+                    ],
+                    "Qubits": [
+                        0,
+                        3
+                    ]
+                },
+                {
+                    "Name": "h",
+                    "Angle": [],
+                    "Qubits": [
+                        0
+                    ]
+                },
+                {
+                    "Name": "ry",
                     "Angle": [
                         0.2
                     ],
@@ -324,60 +279,12 @@
                     ]
                 },
                 {
-                    "Name": "rzz",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        3,
-                        4
-                    ]
-                },
-                {
-                    "Name": "rx",
+                    "Name": "ry",
                     "Angle": [
                         0.2
                     ],
                     "Qubits": [
                         3
-                    ]
-                },
-                {
-                    "Name": "rzz",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        4,
-                        5
-                    ]
-                },
-                {
-                    "Name": "rzz",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        0,
-                        5
-                    ]
-                },
-                {
-                    "Name": "rx",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        4
-                    ]
-                },
-                {
-                    "Name": "rx",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        5
                     ]
                 },
                 {
@@ -388,7 +295,14 @@
                     ]
                 },
                 {
-                    "Name": "rx",
+                    "Name": "h",
+                    "Angle": [],
+                    "Qubits": [
+                        0
+                    ]
+                },
+                {
+                    "Name": "ry",
                     "Angle": [
                         0.2
                     ],
@@ -401,14 +315,14 @@
         {
             "Subexperiment": "A",
             "Subcircuit": 3,
-            "Qubit number": 6,
+            "Qubit number": 4,
             "Qubit range": [
                 0,
-                5
+                3
             ],
             "Operations": [
                 {
-                    "Name": "rzz",
+                    "Name": "rxx",
                     "Angle": [
                         0.2
                     ],
@@ -418,7 +332,7 @@
                     ]
                 },
                 {
-                    "Name": "rzz",
+                    "Name": "rxx",
                     "Angle": [
                         0.2
                     ],
@@ -428,7 +342,7 @@
                     ]
                 },
                 {
-                    "Name": "rx",
+                    "Name": "ry",
                     "Angle": [
                         0.2
                     ],
@@ -437,7 +351,7 @@
                     ]
                 },
                 {
-                    "Name": "rzz",
+                    "Name": "rxx",
                     "Angle": [
                         0.2
                     ],
@@ -447,55 +361,17 @@
                     ]
                 },
                 {
-                    "Name": "rx",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        2
-                    ]
-                },
-                {
-                    "Name": "rzz",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        3,
-                        4
-                    ]
-                },
-                {
-                    "Name": "rx",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        3
-                    ]
-                },
-                {
-                    "Name": "rzz",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        4,
-                        5
-                    ]
-                },
-                {
-                    "Name": "rzz",
+                    "Name": "rxx",
                     "Angle": [
                         0.2
                     ],
                     "Qubits": [
                         0,
-                        5
+                        3
                     ]
                 },
                 {
-                    "Name": "rz",
+                    "Name": "rx",
                     "Angle": [
                         1.5707963267948966
                     ],
@@ -504,7 +380,7 @@
                     ]
                 },
                 {
-                    "Name": "rx",
+                    "Name": "ry",
                     "Angle": [
                         0.2
                     ],
@@ -513,21 +389,21 @@
                     ]
                 },
                 {
-                    "Name": "rx",
+                    "Name": "ry",
                     "Angle": [
                         0.2
                     ],
                     "Qubits": [
-                        4
+                        2
                     ]
                 },
                 {
-                    "Name": "rx",
+                    "Name": "ry",
                     "Angle": [
                         0.2
                     ],
                     "Qubits": [
-                        5
+                        3
                     ]
                 }
             ]
@@ -535,14 +411,14 @@
         {
             "Subexperiment": "A",
             "Subcircuit": 4,
-            "Qubit number": 6,
+            "Qubit number": 4,
             "Qubit range": [
                 0,
-                5
+                3
             ],
             "Operations": [
                 {
-                    "Name": "rzz",
+                    "Name": "rxx",
                     "Angle": [
                         0.2
                     ],
@@ -552,7 +428,7 @@
                     ]
                 },
                 {
-                    "Name": "rzz",
+                    "Name": "rxx",
                     "Angle": [
                         0.2
                     ],
@@ -562,7 +438,7 @@
                     ]
                 },
                 {
-                    "Name": "rx",
+                    "Name": "ry",
                     "Angle": [
                         0.2
                     ],
@@ -571,7 +447,7 @@
                     ]
                 },
                 {
-                    "Name": "rzz",
+                    "Name": "rxx",
                     "Angle": [
                         0.2
                     ],
@@ -581,55 +457,17 @@
                     ]
                 },
                 {
-                    "Name": "rx",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        2
-                    ]
-                },
-                {
-                    "Name": "rzz",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        3,
-                        4
-                    ]
-                },
-                {
-                    "Name": "rx",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        3
-                    ]
-                },
-                {
-                    "Name": "rzz",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        4,
-                        5
-                    ]
-                },
-                {
-                    "Name": "rzz",
+                    "Name": "rxx",
                     "Angle": [
                         0.2
                     ],
                     "Qubits": [
                         0,
-                        5
+                        3
                     ]
                 },
                 {
-                    "Name": "rz",
+                    "Name": "rx",
                     "Angle": [
                         -1.5707963267948966
                     ],
@@ -638,7 +476,7 @@
                     ]
                 },
                 {
-                    "Name": "rx",
+                    "Name": "ry",
                     "Angle": [
                         0.2
                     ],
@@ -647,21 +485,21 @@
                     ]
                 },
                 {
-                    "Name": "rx",
+                    "Name": "ry",
                     "Angle": [
                         0.2
                     ],
                     "Qubits": [
-                        4
+                        2
                     ]
                 },
                 {
-                    "Name": "rx",
+                    "Name": "ry",
                     "Angle": [
                         0.2
                     ],
                     "Qubits": [
-                        5
+                        3
                     ]
                 }
             ]
@@ -669,14 +507,14 @@
         {
             "Subexperiment": "A",
             "Subcircuit": 5,
-            "Qubit number": 6,
+            "Qubit number": 4,
             "Qubit range": [
                 0,
-                5
+                3
             ],
             "Operations": [
                 {
-                    "Name": "rzz",
+                    "Name": "rxx",
                     "Angle": [
                         0.2
                     ],
@@ -686,7 +524,7 @@
                     ]
                 },
                 {
-                    "Name": "rzz",
+                    "Name": "rxx",
                     "Angle": [
                         0.2
                     ],
@@ -696,7 +534,7 @@
                     ]
                 },
                 {
-                    "Name": "rx",
+                    "Name": "ry",
                     "Angle": [
                         0.2
                     ],
@@ -705,7 +543,7 @@
                     ]
                 },
                 {
-                    "Name": "rzz",
+                    "Name": "rxx",
                     "Angle": [
                         0.2
                     ],
@@ -715,55 +553,17 @@
                     ]
                 },
                 {
-                    "Name": "rx",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        2
-                    ]
-                },
-                {
-                    "Name": "rzz",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        3,
-                        4
-                    ]
-                },
-                {
-                    "Name": "rx",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        3
-                    ]
-                },
-                {
-                    "Name": "rzz",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        4,
-                        5
-                    ]
-                },
-                {
-                    "Name": "rzz",
+                    "Name": "rxx",
                     "Angle": [
                         0.2
                     ],
                     "Qubits": [
                         0,
-                        5
+                        3
                     ]
                 },
                 {
-                    "Name": "rz",
+                    "Name": "rx",
                     "Angle": [
                         3.141592653589793
                     ],
@@ -772,7 +572,7 @@
                     ]
                 },
                 {
-                    "Name": "rx",
+                    "Name": "ry",
                     "Angle": [
                         0.2
                     ],
@@ -781,21 +581,21 @@
                     ]
                 },
                 {
-                    "Name": "rx",
+                    "Name": "ry",
                     "Angle": [
                         0.2
                     ],
                     "Qubits": [
-                        4
+                        2
                     ]
                 },
                 {
-                    "Name": "rx",
+                    "Name": "ry",
                     "Angle": [
                         0.2
                     ],
                     "Qubits": [
-                        5
+                        3
                     ]
                 }
             ]
@@ -803,14 +603,43 @@
         {
             "Subexperiment": "B",
             "Subcircuit": 0,
-            "Qubit number": 6,
+            "Qubit number": 4,
             "Qubit range": [
-                6,
-                11
+                4,
+                7
             ],
             "Operations": [
                 {
-                    "Name": "rzz",
+                    "Name": "rxx",
+                    "Angle": [
+                        0.2
+                    ],
+                    "Qubits": [
+                        4,
+                        5
+                    ]
+                },
+                {
+                    "Name": "rxx",
+                    "Angle": [
+                        0.2
+                    ],
+                    "Qubits": [
+                        5,
+                        6
+                    ]
+                },
+                {
+                    "Name": "ry",
+                    "Angle": [
+                        0.2
+                    ],
+                    "Qubits": [
+                        5
+                    ]
+                },
+                {
+                    "Name": "rxx",
                     "Angle": [
                         0.2
                     ],
@@ -820,84 +649,26 @@
                     ]
                 },
                 {
-                    "Name": "rzz",
+                    "Name": "rxx",
                     "Angle": [
                         0.2
                     ],
                     "Qubits": [
-                        7,
-                        8
-                    ]
-                },
-                {
-                    "Name": "rx",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
+                        4,
                         7
                     ]
                 },
                 {
-                    "Name": "rzz",
+                    "Name": "ry",
                     "Angle": [
                         0.2
                     ],
                     "Qubits": [
-                        8,
-                        9
+                        4
                     ]
                 },
                 {
-                    "Name": "rx",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        8
-                    ]
-                },
-                {
-                    "Name": "rzz",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        9,
-                        10
-                    ]
-                },
-                {
-                    "Name": "rx",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        9
-                    ]
-                },
-                {
-                    "Name": "rzz",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        10,
-                        11
-                    ]
-                },
-                {
-                    "Name": "rzz",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        6,
-                        11
-                    ]
-                },
-                {
-                    "Name": "rx",
+                    "Name": "ry",
                     "Angle": [
                         0.2
                     ],
@@ -906,21 +677,12 @@
                     ]
                 },
                 {
-                    "Name": "rx",
+                    "Name": "ry",
                     "Angle": [
                         0.2
                     ],
                     "Qubits": [
-                        10
-                    ]
-                },
-                {
-                    "Name": "rx",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        11
+                        7
                     ]
                 }
             ]
@@ -928,14 +690,43 @@
         {
             "Subexperiment": "B",
             "Subcircuit": 1,
-            "Qubit number": 6,
+            "Qubit number": 4,
             "Qubit range": [
-                6,
-                11
+                4,
+                7
             ],
             "Operations": [
                 {
-                    "Name": "rzz",
+                    "Name": "rxx",
+                    "Angle": [
+                        0.2
+                    ],
+                    "Qubits": [
+                        4,
+                        5
+                    ]
+                },
+                {
+                    "Name": "rxx",
+                    "Angle": [
+                        0.2
+                    ],
+                    "Qubits": [
+                        5,
+                        6
+                    ]
+                },
+                {
+                    "Name": "ry",
+                    "Angle": [
+                        0.2
+                    ],
+                    "Qubits": [
+                        5
+                    ]
+                },
+                {
+                    "Name": "rxx",
                     "Angle": [
                         0.2
                     ],
@@ -945,84 +736,35 @@
                     ]
                 },
                 {
-                    "Name": "rzz",
+                    "Name": "rxx",
                     "Angle": [
                         0.2
                     ],
                     "Qubits": [
-                        7,
-                        8
+                        4,
+                        7
+                    ]
+                },
+                {
+                    "Name": "ry",
+                    "Angle": [
+                        0.2
+                    ],
+                    "Qubits": [
+                        4
                     ]
                 },
                 {
                     "Name": "rx",
                     "Angle": [
-                        0.2
+                        1.5707963267948966
                     ],
                     "Qubits": [
                         7
                     ]
                 },
                 {
-                    "Name": "rzz",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        8,
-                        9
-                    ]
-                },
-                {
-                    "Name": "rx",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        8
-                    ]
-                },
-                {
-                    "Name": "rzz",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        9,
-                        10
-                    ]
-                },
-                {
-                    "Name": "rx",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        9
-                    ]
-                },
-                {
-                    "Name": "rzz",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        10,
-                        11
-                    ]
-                },
-                {
-                    "Name": "rzz",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        6,
-                        11
-                    ]
-                },
-                {
-                    "Name": "rx",
+                    "Name": "ry",
                     "Angle": [
                         0.2
                     ],
@@ -1031,30 +773,12 @@
                     ]
                 },
                 {
-                    "Name": "rz",
-                    "Angle": [
-                        1.5707963267948966
-                    ],
-                    "Qubits": [
-                        11
-                    ]
-                },
-                {
-                    "Name": "rx",
+                    "Name": "ry",
                     "Angle": [
                         0.2
                     ],
                     "Qubits": [
-                        10
-                    ]
-                },
-                {
-                    "Name": "rx",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        11
+                        7
                     ]
                 }
             ]
@@ -1062,14 +786,43 @@
         {
             "Subexperiment": "B",
             "Subcircuit": 2,
-            "Qubit number": 6,
+            "Qubit number": 4,
             "Qubit range": [
-                6,
-                11
+                4,
+                7
             ],
             "Operations": [
                 {
-                    "Name": "rzz",
+                    "Name": "rxx",
+                    "Angle": [
+                        0.2
+                    ],
+                    "Qubits": [
+                        4,
+                        5
+                    ]
+                },
+                {
+                    "Name": "rxx",
+                    "Angle": [
+                        0.2
+                    ],
+                    "Qubits": [
+                        5,
+                        6
+                    ]
+                },
+                {
+                    "Name": "ry",
+                    "Angle": [
+                        0.2
+                    ],
+                    "Qubits": [
+                        5
+                    ]
+                },
+                {
+                    "Name": "rxx",
                     "Angle": [
                         0.2
                     ],
@@ -1079,84 +832,35 @@
                     ]
                 },
                 {
-                    "Name": "rzz",
+                    "Name": "rxx",
                     "Angle": [
                         0.2
                     ],
                     "Qubits": [
-                        7,
-                        8
+                        4,
+                        7
+                    ]
+                },
+                {
+                    "Name": "ry",
+                    "Angle": [
+                        0.2
+                    ],
+                    "Qubits": [
+                        4
                     ]
                 },
                 {
                     "Name": "rx",
                     "Angle": [
-                        0.2
+                        -1.5707963267948966
                     ],
                     "Qubits": [
                         7
                     ]
                 },
                 {
-                    "Name": "rzz",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        8,
-                        9
-                    ]
-                },
-                {
-                    "Name": "rx",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        8
-                    ]
-                },
-                {
-                    "Name": "rzz",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        9,
-                        10
-                    ]
-                },
-                {
-                    "Name": "rx",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        9
-                    ]
-                },
-                {
-                    "Name": "rzz",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        10,
-                        11
-                    ]
-                },
-                {
-                    "Name": "rzz",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        6,
-                        11
-                    ]
-                },
-                {
-                    "Name": "rx",
+                    "Name": "ry",
                     "Angle": [
                         0.2
                     ],
@@ -1165,30 +869,12 @@
                     ]
                 },
                 {
-                    "Name": "rz",
-                    "Angle": [
-                        -1.5707963267948966
-                    ],
-                    "Qubits": [
-                        11
-                    ]
-                },
-                {
-                    "Name": "rx",
+                    "Name": "ry",
                     "Angle": [
                         0.2
                     ],
                     "Qubits": [
-                        10
-                    ]
-                },
-                {
-                    "Name": "rx",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        11
+                        7
                     ]
                 }
             ]
@@ -1196,14 +882,43 @@
         {
             "Subexperiment": "B",
             "Subcircuit": 3,
-            "Qubit number": 6,
+            "Qubit number": 4,
             "Qubit range": [
-                6,
-                11
+                4,
+                7
             ],
             "Operations": [
                 {
-                    "Name": "rzz",
+                    "Name": "rxx",
+                    "Angle": [
+                        0.2
+                    ],
+                    "Qubits": [
+                        4,
+                        5
+                    ]
+                },
+                {
+                    "Name": "rxx",
+                    "Angle": [
+                        0.2
+                    ],
+                    "Qubits": [
+                        5,
+                        6
+                    ]
+                },
+                {
+                    "Name": "ry",
+                    "Angle": [
+                        0.2
+                    ],
+                    "Qubits": [
+                        5
+                    ]
+                },
+                {
+                    "Name": "rxx",
                     "Angle": [
                         0.2
                     ],
@@ -1213,84 +928,26 @@
                     ]
                 },
                 {
-                    "Name": "rzz",
+                    "Name": "rxx",
                     "Angle": [
                         0.2
                     ],
                     "Qubits": [
-                        7,
-                        8
-                    ]
-                },
-                {
-                    "Name": "rx",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
+                        4,
                         7
                     ]
                 },
                 {
-                    "Name": "rzz",
+                    "Name": "ry",
                     "Angle": [
                         0.2
                     ],
                     "Qubits": [
-                        8,
-                        9
+                        4
                     ]
                 },
                 {
-                    "Name": "rx",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        8
-                    ]
-                },
-                {
-                    "Name": "rzz",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        9,
-                        10
-                    ]
-                },
-                {
-                    "Name": "rx",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        9
-                    ]
-                },
-                {
-                    "Name": "rzz",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        10,
-                        11
-                    ]
-                },
-                {
-                    "Name": "rzz",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        6,
-                        11
-                    ]
-                },
-                {
-                    "Name": "rx",
+                    "Name": "ry",
                     "Angle": [
                         0.2
                     ],
@@ -1299,28 +956,33 @@
                     ]
                 },
                 {
-                    "Name": "rx",
-                    "Angle": [
-                        0.2
-                    ],
+                    "Name": "h",
+                    "Angle": [],
                     "Qubits": [
-                        10
+                        7
                     ]
                 },
                 {
                     "Name": "measure",
                     "Angle": [],
                     "Qubits": [
-                        11
+                        7
                     ]
                 },
                 {
-                    "Name": "rx",
+                    "Name": "h",
+                    "Angle": [],
+                    "Qubits": [
+                        7
+                    ]
+                },
+                {
+                    "Name": "ry",
                     "Angle": [
                         0.2
                     ],
                     "Qubits": [
-                        11
+                        7
                     ]
                 }
             ]
@@ -1328,14 +990,43 @@
         {
             "Subexperiment": "B",
             "Subcircuit": 4,
-            "Qubit number": 6,
+            "Qubit number": 4,
             "Qubit range": [
-                6,
-                11
+                4,
+                7
             ],
             "Operations": [
                 {
-                    "Name": "rzz",
+                    "Name": "rxx",
+                    "Angle": [
+                        0.2
+                    ],
+                    "Qubits": [
+                        4,
+                        5
+                    ]
+                },
+                {
+                    "Name": "rxx",
+                    "Angle": [
+                        0.2
+                    ],
+                    "Qubits": [
+                        5,
+                        6
+                    ]
+                },
+                {
+                    "Name": "ry",
+                    "Angle": [
+                        0.2
+                    ],
+                    "Qubits": [
+                        5
+                    ]
+                },
+                {
+                    "Name": "rxx",
                     "Angle": [
                         0.2
                     ],
@@ -1345,84 +1036,26 @@
                     ]
                 },
                 {
-                    "Name": "rzz",
+                    "Name": "rxx",
                     "Angle": [
                         0.2
                     ],
                     "Qubits": [
-                        7,
-                        8
-                    ]
-                },
-                {
-                    "Name": "rx",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
+                        4,
                         7
                     ]
                 },
                 {
-                    "Name": "rzz",
+                    "Name": "ry",
                     "Angle": [
                         0.2
                     ],
                     "Qubits": [
-                        8,
-                        9
+                        4
                     ]
                 },
                 {
-                    "Name": "rx",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        8
-                    ]
-                },
-                {
-                    "Name": "rzz",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        9,
-                        10
-                    ]
-                },
-                {
-                    "Name": "rx",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        9
-                    ]
-                },
-                {
-                    "Name": "rzz",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        10,
-                        11
-                    ]
-                },
-                {
-                    "Name": "rzz",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        6,
-                        11
-                    ]
-                },
-                {
-                    "Name": "rx",
+                    "Name": "ry",
                     "Angle": [
                         0.2
                     ],
@@ -1431,28 +1064,33 @@
                     ]
                 },
                 {
-                    "Name": "rx",
-                    "Angle": [
-                        0.2
-                    ],
+                    "Name": "h",
+                    "Angle": [],
                     "Qubits": [
-                        10
+                        7
                     ]
                 },
                 {
                     "Name": "measure",
                     "Angle": [],
                     "Qubits": [
-                        11
+                        7
                     ]
                 },
                 {
-                    "Name": "rx",
+                    "Name": "h",
+                    "Angle": [],
+                    "Qubits": [
+                        7
+                    ]
+                },
+                {
+                    "Name": "ry",
                     "Angle": [
                         0.2
                     ],
                     "Qubits": [
-                        11
+                        7
                     ]
                 }
             ]
@@ -1460,14 +1098,43 @@
         {
             "Subexperiment": "B",
             "Subcircuit": 5,
-            "Qubit number": 6,
+            "Qubit number": 4,
             "Qubit range": [
-                6,
-                11
+                4,
+                7
             ],
             "Operations": [
                 {
-                    "Name": "rzz",
+                    "Name": "rxx",
+                    "Angle": [
+                        0.2
+                    ],
+                    "Qubits": [
+                        4,
+                        5
+                    ]
+                },
+                {
+                    "Name": "rxx",
+                    "Angle": [
+                        0.2
+                    ],
+                    "Qubits": [
+                        5,
+                        6
+                    ]
+                },
+                {
+                    "Name": "ry",
+                    "Angle": [
+                        0.2
+                    ],
+                    "Qubits": [
+                        5
+                    ]
+                },
+                {
+                    "Name": "rxx",
                     "Angle": [
                         0.2
                     ],
@@ -1477,84 +1144,35 @@
                     ]
                 },
                 {
-                    "Name": "rzz",
+                    "Name": "rxx",
                     "Angle": [
                         0.2
                     ],
                     "Qubits": [
-                        7,
-                        8
+                        4,
+                        7
+                    ]
+                },
+                {
+                    "Name": "ry",
+                    "Angle": [
+                        0.2
+                    ],
+                    "Qubits": [
+                        4
                     ]
                 },
                 {
                     "Name": "rx",
                     "Angle": [
-                        0.2
+                        3.141592653589793
                     ],
                     "Qubits": [
                         7
                     ]
                 },
                 {
-                    "Name": "rzz",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        8,
-                        9
-                    ]
-                },
-                {
-                    "Name": "rx",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        8
-                    ]
-                },
-                {
-                    "Name": "rzz",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        9,
-                        10
-                    ]
-                },
-                {
-                    "Name": "rx",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        9
-                    ]
-                },
-                {
-                    "Name": "rzz",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        10,
-                        11
-                    ]
-                },
-                {
-                    "Name": "rzz",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        6,
-                        11
-                    ]
-                },
-                {
-                    "Name": "rx",
+                    "Name": "ry",
                     "Angle": [
                         0.2
                     ],
@@ -1563,30 +1181,12 @@
                     ]
                 },
                 {
-                    "Name": "rz",
-                    "Angle": [
-                        3.141592653589793
-                    ],
-                    "Qubits": [
-                        11
-                    ]
-                },
-                {
-                    "Name": "rx",
+                    "Name": "ry",
                     "Angle": [
                         0.2
                     ],
                     "Qubits": [
-                        10
-                    ]
-                },
-                {
-                    "Name": "rx",
-                    "Angle": [
-                        0.2
-                    ],
-                    "Qubits": [
-                        11
+                        7
                     ]
                 }
             ]

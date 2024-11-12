@@ -337,7 +337,7 @@ function mpo_sequence_apply(circ_data, basis_gates)
                     qubit_index = mpo[2]
                     rho = apply_measurement(rho, sites_label, qubit_index)
                 elseif isa(mpo, MPO)
-                    rho = apply(apply(mpo, rho), dag(mpo))
+                    rho = apply(apply(mpo, rho), swapprime(dag(mpo), 0 => 1))  # Enhanced dagger by Gian!
                 end
             end 
             println("Completed applying MPO sequence for subcircuit $label$index.")
