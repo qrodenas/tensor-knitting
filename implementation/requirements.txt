@@ -1,0 +1,5 @@
+qiskit
+qiskit-ibm-runtime
+qiskit-aer
+qiskit-addon-cutting
+numpy

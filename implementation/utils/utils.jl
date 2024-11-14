@@ -256,15 +256,15 @@ function build_mpo_sequence(sites, operations, basis_gates)
 end
 
 
-function apply_measurement(rho, sites, index)
+function apply_measurement(rho, sites, index, cutoff, maxdim, method)
     M0 = proj_0_gate(sites, index)
     M1 = proj_1_gate(sites, index)
-    return apply(apply(M0, rho), dag(M0)) - apply(apply(M1, rho), dag(M1))
+    return apply(apply(M0, rho; cutoff = cutoff, maxdim = maxdim), dag(M0); cutoff = cutoff, maxdim = maxdim) - apply(apply(M1, rho; cutoff = cutoff, maxdim = maxdim), dag(M1); cutoff = cutoff, maxdim = maxdim)
 end
 
 
 # Combined function to build MPO sequences and apply them to rho
-function mpo_sequence_apply(circ_data, basis_gates)
+function mpo_sequence_apply(circ_data, basis_gates, cutoff, maxdim, method)
     all_mpo_sequences = Dict{String, Vector{Any}}()
     all_rhos = Dict{String, Vector{MPO}}()
     observables = Dict{String, Vector{MPO}}()
@@ -321,7 +321,6 @@ function mpo_sequence_apply(circ_data, basis_gates)
                 push!(Zmpo_B, mpo) 
             end
         end
-
         
         for subcircuit in circ_data[label]["Subcircuits"]
             operations = subcircuit["Operations"]
@@ -335,9 +334,9 @@ function mpo_sequence_apply(circ_data, basis_gates)
             for mpo in mpo_sequence
                 if typeof(mpo) != MPO && mpo[1] == "measure"
                     qubit_index = mpo[2]
-                    rho = apply_measurement(rho, sites_label, qubit_index)
+                    rho = apply_measurement(rho, sites_label, qubit_index, cutoff, maxdim, method)
                 elseif isa(mpo, MPO)
-                    rho = apply(apply(mpo, rho), swapprime(dag(mpo), 0 => 1))  # Enhanced dagger by Gian!
+                    rho = apply(apply(mpo, rho; cutoff = cutoff, maxdim = maxdim), swapprime(dag(mpo), 0 => 1); cutoff = cutoff, maxdim = maxdim)  # Enhanced dagger by Gian!
                 end
             end 
             println("Completed applying MPO sequence for subcircuit $label$index.")
