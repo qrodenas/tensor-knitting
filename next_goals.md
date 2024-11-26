@@ -4,8 +4,7 @@
 
 - Let’s see how big we can go on the MPO.  
   *(Remember the system looks like a kite, we want to simulate only the tail of the kite.)*
-
-- Try to do mixed MPS-MPO simulation, filter when there is no measurement, and only use MPO.
+  Use MPS simulator in qiskit
 
 - See how bond dimension in the tail works depending on JXX (constant J).
 
@@ -13,6 +12,9 @@
 
 
 ## Old (mostly done)
+
+- Try to do mixed MPS-MPO simulation, filter when there is no measurement, and only use MPO.
+
 - **Add channels in the `build_mpo_sequence` function.**  
   Make sure you sum them!
 
