@@ -1,5 +1,6 @@
 from qiskit_addon_cutting.utils.simulation import ExactSampler
 from qiskit_addon_cutting import reconstruct_expectation_values
+from qiskit_aer import AerSimulator
 import numpy as np
 
 def run_exact_sampler(subexperiments):
@@ -18,6 +19,27 @@ def run_exact_sampler(subexperiments):
         for label, subexperiment in subexperiments.items()
     }
     return results
+
+def run_mps_simulator(subexperiments):
+
+    mps_simulator = AerSimulator(method='matrix_product_state')
+    
+    results = {
+        label: mps_simulator.run(subexperiment).result().get_counts()
+        for label, subexperiment in subexperiments.items()
+    }
+    return results
+
+def run_mps_simulator2(subexperiments):
+    
+    mps_simulator = EstimatorV2(backend_options = {'method': 'matrix_product_state'})
+    
+    results = {
+        label: mps_simulator.run(subexperiment).result().get_counts()
+        for label, subexperiment in subexperiments.items()
+    }
+    return results
+
 
 
 def reconstruct_expectation(results, coefficients, subobservables, z_observables):

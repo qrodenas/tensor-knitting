@@ -1,7 +1,7 @@
 from qiskit.quantum_info import SparsePauliOp
 from qiskit.transpiler import CouplingMap
 
-def build_hamiltonian(num_qubits, coupling_map: CouplingMap, single_gates=['Z'], two_gates=['XX'], anisotropy=1, h=1):
+def build_hamiltonian(num_qubits, coupling_map: CouplingMap, decrease = False, single_gates=['Z'], two_gates=['XX'], anisotropy=1, h=1):
     """
     Builds the Hamiltonian for the quantum system.
 
@@ -19,13 +19,15 @@ def build_hamiltonian(num_qubits, coupling_map: CouplingMap, single_gates=['Z'],
     edge_list = coupling_map.get_edges()
     hamlist = []
 
-    for edge in edge_list:
+    for i, edge in enumerate(edge_list):
+        factor = anisotropy**(-i) if decrease else anisotropy
         for gate in two_gates:
-            hamlist.append((gate, edge, anisotropy))
+            hamlist.append((gate, edge, factor))
 
     for qubit in coupling_map.physical_qubits:
         for gate in single_gates:
             hamlist.append((gate, [qubit], h))
+
 
     hamiltonian = SparsePauliOp.from_sparse_list(hamlist, num_qubits=num_qubits)
     

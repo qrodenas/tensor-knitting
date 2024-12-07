@@ -94,7 +94,7 @@ function mpo_sequence_apply_mps(circ_data, basis_gates, cutoff, maxdim, method)
                         if prob1 > epsilon
                             psi1 = apply(P1_mpo, psi)
                             psi1 = normalize(psi1)
-                            push!(new_psis, (psi1, prob * prob1))
+                            push!(new_psis, (psi1, prob * (-prob1)))
                         end
 
                     end
