@@ -1,5 +1,11 @@
 # Next Goals
 
+### 26/11
+- Fix the code for computing the expectation value with MPS (more general observable definition)
+
+- See if there is a problem when we sample subcircuits (QPD not summing up to one)
+
+- Look at older things
 ### 15/11
 
 - Let’s see how big we can go on the MPO.  
