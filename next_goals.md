@@ -1,9 +1,19 @@
 # Next Goals
 
 ### 26/11
+
+- Check behaviour of MPS simulators when changing coupling constant with distance. Also check what happens if we
+change link dimension.
+
 - Fix the code for computing the expectation value with MPS (more general observable definition)
 
-- See if there is a problem when we sample subcircuits (QPD not summing up to one)
+- See if there is a problem when we sample subcircuits (QPD not summing up to one)? Qiskit problem?s
+
+- Add maxdim and cutoff to all apply().
+
+- I am finding that maybe manually contracting tensors (manually computing inner products) can be faster
+
+- Ask Gian where my code can be made more efficient.
 
 - Look at older things
 ### 15/11
