@@ -2,6 +2,8 @@ from qiskit_addon_cutting.utils.simulation import ExactSampler
 from qiskit_addon_cutting import reconstruct_expectation_values
 from qiskit_aer import AerSimulator
 import numpy as np
+from qiskit_ibm_runtime import EstimatorV2
+from qiskit_aer.primitives import EstimatorV2
 
 def run_exact_sampler(subexperiments):
     """
@@ -20,25 +22,24 @@ def run_exact_sampler(subexperiments):
     }
     return results
 
-def run_mps_simulator(subexperiments):
 
-    mps_simulator = AerSimulator(method='matrix_product_state')
-    
-    results = {
-        label: mps_simulator.run(subexperiment).result().get_counts()
-        for label, subexperiment in subexperiments.items()
-    }
-    return results
+def run_mps_simulator(subexperiments, observables, coeffs, shots):
+    #Maybe I can set the number of shots as a parameter
+    mps_simulator = EstimatorV2(options={'backend_options': {'method': 'matrix_product_state'}, 'run_options': {'shots': shots}})
+    results = {label: [] for label in subexperiments.keys()}
+    for label, circuits in subexperiments.items():
+        for circuit in circuits:
+            job = mps_simulator.run([(circuit, observables[label])])
+            exp = job.result()[0].data.evs
+            results[label].append(exp)
 
-def run_mps_simulator2(subexperiments):
-    
-    mps_simulator = EstimatorV2(backend_options = {'method': 'matrix_product_state'})
-    
-    results = {
-        label: mps_simulator.run(subexperiment).result().get_counts()
-        for label, subexperiment in subexperiments.items()
-    }
-    return results
+    expval = 0.0
+    for i in range(len(coeffs)):
+        product = coeffs[i][0] 
+        for label in results:
+            product *= results[label][i] 
+        expval += np.sum(product)
+    return expval
 
 
 

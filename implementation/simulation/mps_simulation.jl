@@ -14,9 +14,6 @@ export mpo_sequence_apply_mps
 function mpo_sequence_apply_mps(circ_data, basis_gates, cutoff, maxdim, method)
     all_mpo_sequences = Dict{String, Vector{Any}}()
     all_psis = Dict{String, Vector{Vector{Tuple{MPS, Float64}}}}()
-    observables = Dict{String, Vector{MPO}}()
-    Zmpo_A = Vector{MPO}()
-    Zmpo_B = Vector{MPO}()
 
     for label in keys(circ_data)
         n_qubits = circ_data[label]["Qubit number"]
@@ -28,38 +25,6 @@ function mpo_sequence_apply_mps(circ_data, basis_gates, cutoff, maxdim, method)
 
         label_mpo_sequences = Vector{Any}()
         all_psis[label] = Vector{Vector{Tuple{MPS, Float64}}}()
-        
-        if label == "A"
-            for i in 1:n_qubits
-                os = OpSum()
-                add!(os, "Z", i) 
-                mpo = MPO(os, sites_label)
-                push!(Zmpo_A, mpo) 
-            end
-
-            for i in 1:n_qubits
-                os = OpSum()
-                add!(os, "Id", i)  
-                mpo = MPO(os, sites_label)
-                push!(Zmpo_A, mpo) 
-            end
-        end
-
-        if label == "B"
-            for i in 1:n_qubits
-                os = OpSum()
-                add!(os, "Id", i) 
-                mpo = MPO(os, sites_label)
-                push!(Zmpo_B, mpo)  
-            end
-
-            for i in 1:n_qubits
-                os = OpSum()
-                add!(os, "Z", i)  
-                mpo = MPO(os, sites_label)
-                push!(Zmpo_B, mpo) 
-            end
-        end
 
         for subcircuit in circ_data[label]["Subcircuits"]
             operations = subcircuit["Operations"]
@@ -121,10 +86,10 @@ function mpo_sequence_apply_mps(circ_data, basis_gates, cutoff, maxdim, method)
         all_mpo_sequences[label] = label_mpo_sequences
     end
 
-    observables["A"] = Zmpo_A
-    observables["B"] = Zmpo_B
-
-    return (all_mpo_sequences, all_psis, observables)
+    return (all_mpo_sequences, all_psis)
 end
 
 end 
+
+
+
