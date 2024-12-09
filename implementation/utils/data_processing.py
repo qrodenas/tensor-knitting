@@ -18,7 +18,7 @@ def circuit_data_dict(subexperiments, coefs, expval, basis_gates):
     readable_data = []
     for category in sorted(subexperiments.keys()):
         for index, circuit in enumerate(subexperiments[category]):
-            transpiled = transpile(circuit, basis_gates=basis_gates)
+            transpiled = transpile(circuit, basis_gates=basis_gates) # TODO add optimization when transpiling?
             operations = []
             qubit_range = [transpiled.qubits[0]._index, transpiled.qubits[-1]._index]
             

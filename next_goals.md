@@ -1,6 +1,13 @@
 # Next Goals
 
+- Huge problem I am having: when choosing a small dt in the LieTrotter approximation, the hamiltonian seems to not be doing anything:
+the expectation values do not change.
+
+
+
 ### 26/11
+
+- Add optimization when transpiling
 
 - Check behaviour of MPS simulators when changing coupling constant with distance. Also check what happens if we
 change link dimension.

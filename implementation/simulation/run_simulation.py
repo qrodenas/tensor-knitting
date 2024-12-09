@@ -2,8 +2,8 @@ from qiskit_addon_cutting.utils.simulation import ExactSampler
 from qiskit_addon_cutting import reconstruct_expectation_values
 from qiskit_aer import AerSimulator
 import numpy as np
-from qiskit_ibm_runtime import EstimatorV2
 from qiskit_aer.primitives import EstimatorV2
+from qiskit.primitives import StatevectorEstimator
 
 def run_exact_sampler(subexperiments):
     """
@@ -23,8 +23,7 @@ def run_exact_sampler(subexperiments):
     return results
 
 
-def run_mps_simulator(subexperiments, observables, coeffs, shots):
-    #Maybe I can set the number of shots as a parameter
+def run_mps_simulator_knitted(subexperiments, observables, coeffs, shots):
     mps_simulator = EstimatorV2(options={'backend_options': {'method': 'matrix_product_state'}, 'run_options': {'shots': shots}})
     results = {label: [] for label in subexperiments.keys()}
     for label, circuits in subexperiments.items():
@@ -41,6 +40,20 @@ def run_mps_simulator(subexperiments, observables, coeffs, shots):
         expval += np.sum(product)
     return expval
 
+
+def run_mps_simulator_full(circuit, observables, shots):
+    mps_simulator = EstimatorV2(options={'backend_options': {'method': 'matrix_product_state'}, 'run_options': {'shots': shots}})
+    
+    job = mps_simulator.run([(circuit, observables)])
+    expval = job.result()[0].data.evs
+    return expval
+
+def run_statevector_simulator_full(circuit, observables):
+    estimator = StatevectorEstimator()
+
+    job = estimator.run([(circuit, observables)])
+    expval = job.result()[0].data.evs
+    return expval
 
 
 def reconstruct_expectation(results, coefficients, subobservables, z_observables):
