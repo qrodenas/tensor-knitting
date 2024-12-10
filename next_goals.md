@@ -1,9 +1,15 @@
 # Next Goals
+### 10/12 Final meeting
 
-- Huge problem I am having: when choosing a small dt in the LieTrotter approximation, the hamiltonian seems to not be doing anything:
-the expectation values do not change.
+- Main problem now is recovering the results in qiskit, because the function reconstruct_expectation_values returns the exp += coeff*subcircuit_expval.
+Options are: changing the qiskit function (should be easy), or creating my own function (perharps a bit harder but should just be a few sums)
 
+- After that I have to think what is the best approach to integrate the qiskit and julia code for doing time evolution (maybe calling the julia code from python?)
 
+- Look at picture in phone to know what you have to implement (comparing growth of link dimension between the approaches, and checking that both approaches yield the same expvals for time evolution).
+Also some check of the runtime could be cool but I have doubts on how to implement it
+
+- Start writing!! Inspiration from Gian's papers and the tensor network papers.  
 
 ### 26/11
 
