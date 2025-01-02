@@ -1,6 +1,6 @@
 module Gates
 
-using ITensors
+using ITensors, ITensorMPS
 
 export h_gate, rz_gate, rx_gate, ry_gate, rxx_gate, ryy_gate, rzz_gate, cx_gate,
        proj_0_gate, proj_1_gate

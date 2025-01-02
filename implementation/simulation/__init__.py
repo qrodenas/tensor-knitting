@@ -1,4 +1,4 @@
 from .build_hamiltonian import build_hamiltonian
-from .trotterization_circuit import trotterization_circuit
+from .trotterization_circuit import trotterization_circuit, trotterization_circuit_order2
 from .partition_circuit import cut_circuit
-from .run_simulation import run_exact_sampler, reconstruct_expectation, run_mps_simulator_knitted, run_mps_simulator_full, run_statevector_simulator_full
+from .run_simulation import run_exact_sampler, reconstruct_expectation,reconstruct_expectation2, run_mps_simulator_knitted, run_mps_simulator_full, run_statevector_simulator_full

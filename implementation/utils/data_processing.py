@@ -55,7 +55,7 @@ def circuit_data_dict(subexperiments, coefs, expval, basis_gates):
     }
     return output_dict
 
-def save_to_json(output_dict, filename="subcircuits.json"):
+def save_to_json(output_dict, filename="subcircuits/subcircuits.json"):
     """
     Saves the output dictionary to a JSON file.
 

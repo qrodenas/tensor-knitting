@@ -1,5 +1,5 @@
 from qiskit_addon_cutting.utils.simulation import ExactSampler
-from qiskit_addon_cutting import reconstruct_expectation_values
+from qiskit_addon_cutting import reconstruct_expectation_values, reconstruct_expectation_values2
 from qiskit_aer import AerSimulator
 import numpy as np
 from qiskit_aer.primitives import EstimatorV2
@@ -55,6 +55,23 @@ def run_statevector_simulator_full(circuit, observables):
     expval = job.result()[0].data.evs
     return expval
 
+
+def reconstruct_expectation2(results, coefficients, subobservables, z_observables):
+    """
+    Reconstructs the expectation value from the results
+
+    Args:
+        results (dict): Results from each sub-experiment.
+        coefficients (list): Coefficients associated with the sub-experiments (and their sub-circuits).
+        subobsevables (SparsePauliOp): observables generated that we want to measure.
+        z_observables (SparsePauliOp): overall observables we want to measure in the circuit, we want to extract their coefficients.
+
+    Returns:
+        float: The reconstructed expectation value.
+    """
+    
+    reconstructed_expval_terms = reconstruct_expectation_values2(results, coefficients, subobservables)
+    return reconstructed_expval_terms
 
 def reconstruct_expectation(results, coefficients, subobservables, z_observables):
     """

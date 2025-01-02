@@ -1,12 +1,14 @@
 module Utils
 
-using JSON, ITensors
+using JSON, ITensors, ITensorMPS, Glob
 
-export parse_subcircuits, create_sites, inspect_mpo
+export parse_subcircuits, create_sites, inspect_mpo, extract_number, pair_files
 
 
 function parse_subcircuits(json_filename::String)
     expected_value = nothing
+    num_qubits_impurity = nothing 
+    offset = nothing
     coefs_list = []
     organized_data = Dict{String, Dict{String, Any}}()
 
@@ -33,7 +35,7 @@ function parse_subcircuits(json_filename::String)
             qubit_range = get(entry, "Qubit range", [1, 1])
             index = get(entry, "Subcircuit", i - 1)  # Fallback to enumeration if missing
             operations_raw = get(entry, "Operations", [])
-
+            
             # Validate essential keys
             if qubit_num === nothing
                 error("Entry at index $i is missing the 'Qubit number' key.")
@@ -42,8 +44,11 @@ function parse_subcircuits(json_filename::String)
             if length(qubit_range) != 2
                 error("Entry at index $i has an invalid 'Qubit range'. It should be a two-element array.")
             end
-
-            offset = qubit_range[1] - 1
+            if i == 1 
+                num_qubits_impurity = qubit_range[1]
+                offset = qubit_range[1] - 1
+            end                
+            
 
             if haskey(qubit_num_dict, category)
                 if qubit_num_dict[category] != qubit_num
@@ -98,7 +103,7 @@ function parse_subcircuits(json_filename::String)
             )
         end
     end  
-    return organized_data, expected_value, coefs_list
+    return organized_data, expected_value, coefs_list, num_qubits_impurity
 end
 
 
@@ -108,6 +113,7 @@ function create_sites(n::Int)
 end
 
 function inspect_mpo(mpo::MPO, sites::Vector{Index})
+    
     N = length(sites)
 
     println("\nManual Inspection of MPO:")
@@ -117,5 +123,36 @@ function inspect_mpo(mpo::MPO, sites::Vector{Index})
     end
 end
 
+function extract_number(filename::String)
+    m = match(r"-(\d+\.?\d*)\.json$", filename)
+    isnothing(m) && return nothing
+    return parse(Float16, m[1])
+end
+
+# Function to make the proper pairs of coeffs_expvals and subcircuits files
+function pair_files(subcircuits_dir::String, coeffs_expvals_dir::String)
+
+    subcircuits_json_files = Glob.glob(joinpath(subcircuits_dir, "*.json"))
+    coeffs_expvals_json_files = Glob.glob(joinpath(coeffs_expvals_dir, "*.json"))
+    
+    subcircuits_dict = Dict{Float16, String}()
+    coeffs_dict = Dict{Float16, String}()
+    
+    for file in subcircuits_json_files
+        num = extract_number(basename(file))
+        isnothing(num) && continue
+        subcircuits_dict[num] = file
+    end
+    
+    for file in coeffs_expvals_json_files
+        num = extract_number(basename(file))
+        isnothing(num) && continue
+        coeffs_dict[num] = file
+    end
+    
+    common_numbers = sort(collect(intersect(keys(subcircuits_dict), keys(coeffs_dict))))
+    
+    return [(subcircuits_dict[n], coeffs_dict[n], n) for n in common_numbers]
+end
 
 end 
