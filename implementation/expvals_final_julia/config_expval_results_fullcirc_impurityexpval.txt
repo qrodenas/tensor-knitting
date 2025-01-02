@@ -1,7 +1,0 @@
-t_step = 0.2
-t_list = [round(t_step * i, 1) for i in range(0, 40)] # defined in this way to avoid floating point errors
-        config = Config(num_spins_impurity = 5, num_spins_bath = 10, two_gates_list=['ZZ'], single_gates_list=['X'], t = t, trotter_reps = int(t**2 + 30), shots_tensor = 1000,  
-                    model = "impurity", edge_probability=1, with_knitting=False,
-                    subcircuits_path=subcircuits_dir, coeffs_exp_path = coeffs_exp_dir, show_config=True,
-                    pass_to_mps = 'bath', n_samples = np.inf, # Use bath to pass bath to MPS (standard practice)
-                    decreasing = True, index_decrease = 10)      
